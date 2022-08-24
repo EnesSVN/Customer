@@ -21,6 +21,7 @@ public class CustomerController {
         this.service = service;
     }
 
+    //http://localhost:8081/create/customer
     @PostMapping("/create/customer")
     public ResponseEntity<?> createCustomer(@Valid @RequestBody CustomerDto customerDto) {
         service.createCustomer(customerDto);
